@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guido's LA Restaurant</title>
+
+    <!-- google fonts & icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style-minify.css" type="text/css">
+</head>
+
+<body id="home">
+    <!-- Header Nav -->
+    <nav class="navBar">
+        <a href="./index.html">
+            <img class="logo" src="./images/Logo_White.png" alt="logo">
+        </a>
+
+        <input type="checkbox" id="showMenu">
+        <label for="showMenu" class="showMenu">
+            <span class="fa-solid fa-bars"></span>
+        </label>
+
+        <ul class="menu">
+            <li><a href="./pages/menu.html">Menu</a></li>
+            <li><a href="./pages/reservations.html">Reservations</a></li>
+          
+            <li class="has-submenu">
+                <a href="./pages/events.html">Events</a>
+                    <input type="checkbox" id="showSubmenu-Events" />
+                <label for="showSubmenu-Events" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                     <li><a href="./pages/catering.html">Catering</a></li>
+                </ul>
+            </li>
+  
+            <li class="has-submenu">
+                <a href="./pages/aboutUs.html">About Us</a>
+                    <input type="checkbox" id="showSubmenu-About" />
+                <label for="showSubmenu-About" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./pages/gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+          
+            <li class="has-submenu">
+                <a href="./pages/contact.html">Contact</a>
+                    <input type="checkbox" id="showSubmenu-Contact" />
+                <label for="showSubmenu-Contact" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./pages/mapAndDirections.html">Map and Directions</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <header>
+        <div class="headline">
+           <img src="images/Home.JPG" alt="Your Home Away From Home">
+        </div>
+    </header>
+
+    <main>
+        <section class="address-home">
+            <div>
+                <article class="where-to-find-us">
+                    <h2>Where to find us?</h2>
+                    <p>11980 Santa Monica Blvd <br>Los Angeles, CA 90025</p>
+                </article>
+
+                <article class="schedules">
+                    <h3>Our Schedules</h3>
+                    <ul>
+                        <li>Lunch Mon-Fri 11:30am-2:30pm</li>
+                        <li>Dinner Sun-Thurs 5pm-10pm</li>
+                        <li>Dinner Fri-Sat 5pm-10:30pm</li>
+                    </ul>
+                </article>
+
+                <article class="schedules">
+                    <h3>Parties Info</h3>
+                    <ul>
+                        <li>Phone : (310) 820 - 6649</li>
+                        <li>Please email</li>
+                        <li> guidoslareservations@gmail.com</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="map">
+                <img src="images/Map.png" alt="Map">
+            </div>
+        </section>
+
+        <section class="reserv-home">
+            <img src="images/MakeAReservation.JPG" alt="">
+        </section>
+
+        <section class="aboutus-home">
+            <div class="about1">
+                <h2>about us</h2>
+                <img src="images/Aboutus.JPG" alt="">
+                <div>
+                    <p>Guido's Restaurant, in West LA, has been serving up authentic Northern Italian cuisine incorporating the freshest ingredients and traditional family-style recipes passed on from generation to generation.</p>
+                
+                    <div class="button">
+                        <a class="buttonlink" href="pages/aboutUs.html">Read More</a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <section class="menu-home">
+            <h2>menu</h2>
+            <div class="food">
+                <article>
+                    <h3>Feta Brucheta</h3>
+                    <img src="images/FetaBruschetta.JPG" alt="">
+                    <p>Incredible, authentic, italian brucheta - the best appetizer for your meal. Winner of the 2021 LA Taste Award.</p>
+                </article>
+
+                <article>
+                    <h3>Famous Pizza</h3>
+                    <img src="images/OurFamousPizza.JPG" alt="">
+                    <p>Premium pizza dough, our family recipe pizza sauce, and the freshest ingredients make for one incredible pizza.</p>
+                </article>
+
+                <article>
+                    <h3>Handmade Pasta</h3>
+                    <img src="images/HomeMadePasta.JPG" alt="">
+                    <p>Hands down the highest quality pasta available in LA. Made from scratch daily for guaranteed taste perfection.</p>
+                </article>
+            </div>
+
+            <div class="button">
+                <a class="buttonlink" href="pages/menu.html">See More</a>
+            </div>
+        </section>
+
+        <section class="mail-home" id="mailshow">
+            <div>
+                <h3>Join our mailing list</h3>
+                <p>Receive all updates about events, discounts and new suggested flavors available on our menu via email.</p>
+            </div>
+
+            <div class="mail-homecontainer">
+                <input type="text" placeholder="Enter your email" >
+                <button type="submit"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal">
+                <div class="mContent">
+                    <h2><a href="" class="message">Thanks For subscribing</a></h2>
+                </div>
+            </div>
+        </section> 
+
+        <script>
+            function toggleMenu() {
+                document.querySelector('.navbar').classList.toggle('active');
+            }
+
+            /* Mail Message */
+            const modal=document.querySelector('.modal');
+            const play=document.querySelector('.fa-play');
+            const close=document.querySelector('.message');
+            const mail=document.querySelector('.mail-homecontainer');
+            modal.classList.add('closemessage')
+
+            play.addEventListener('click', e=> {
+                modal.classList.add('openmessage');
+                modal.classList.remove('closemessage');
+                mail.style.display='none';
+            })
+            close.addEventListener('click', e=> {
+                modal.classList.remove('openmessage');
+                modal.classList.add('closemessage');
+                
+            })
+
+        </script>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+        <nav class="navFooter">
+            <ul class="menuFooter">
+                <li><a href="./pages/menu.html">Menu</a></li>
+                <li><a href="./pages/reservations.html">Reservations</a></li>
+                <li><a href="./pages/events.html">Events</a></li>
+                <li><a href="./pages/aboutUs.html">About us</a></li>
+                <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="footerSocial">
+            <h3>Connect with us!</h3>
+            <section class="socialIcons">
+                <a href="https://www.instagram.com/guidosla/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/guidoslosangeles/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/GuidosWLA/"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </section>
+        </section>
+
+        <section class="footerTerms">
+            <a href="./pages/policies.html">Policies</a>
+            <p>Copyright &copy; 2024 Guido’s LA | All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>

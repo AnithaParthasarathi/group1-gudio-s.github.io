@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guido's - Menu</title>
+
+    <!-- google fonts & icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Montserrat:ital,wght@0,400;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/style-minify.css" type="text/css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous">
+</script>
+
+<script>
+    $(document).ready(function(){
+        $('#s').click(function(){
+            $('.chef-suggestion').show();
+            $('.antipasti').show();
+            $('.zuppe').show();
+            $('.insalate').show();
+            $('.paste').hide();
+            $('.pesce').hide();
+            $('.carne').hide();
+            $('.polli').hide();
+            $('.vegetatiano').hide();
+            $('.sides').hide();
+        })
+    })
+    $(document).ready(function(){
+        $('#e').click(function(){
+            $('.chef-suggestion').show();
+            $('.antipasti').hide();
+            $('.zuppe').hide();
+            $('.insalate').hide();
+            $('.paste').show();
+            $('.pesce').show();
+            $('.carne').show();
+            $('.polli').show();
+            $('.vegetatiano').hide();
+            $('.sides').hide();
+        })
+    })
+    $(document).ready(function(){
+        $('#t').click(function(){
+            $('.chef-suggestion').show();
+            $('.antipasti').hide();
+            $('.zuppe').hide();
+            $('.insalate').hide();
+            $('.paste').hide();
+            $('.pesce').hide();
+            $('.carne').hide();
+            $('.polli').hide();
+            $('.vegetatiano').show();
+            $('.sides').show();
+        })
+    })
+  </script>
+</head>
+
+<body id="menuPage">
+    <!-- Header Nav -->
+    <nav class="navBar">
+        <a href="../index.html">
+            <img class="logo" src="../images/Logo_White.png" alt="logo">
+        </a>
+
+        <input type="checkbox" id="showMenu">
+        <label for="showMenu" class="showMenu">
+            <span class="fa-solid fa-bars"></span>
+        </label>
+
+        <ul class="menu">
+            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="./reservations.html">Reservations</a></li>
+          
+            <li class="has-submenu">
+                <a href="./events.html">Events</a>
+                    <input type="checkbox" id="showSubmenu-Events" />
+                <label for="showSubmenu-Events" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                     <li><a href="./catering.html">Catering</a></li>
+                </ul>
+            </li>
+  
+            <li class="has-submenu">
+                <a href="./aboutUs.html">About Us</a>
+                    <input type="checkbox" id="showSubmenu-About" />
+                <label for="showSubmenu-About" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./gallery.html">Gallery</a></li>
+                </ul>
+            </li>
+          
+            <li class="has-submenu">
+                <a href="./contact.html">Contact</a>
+                    <input type="checkbox" id="showSubmenu-Contact" />
+                <label for="showSubmenu-Contact" class="showSubmenu">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </label>
+                <ul class="submenu">
+                    <li><a href="./mapAndDirections.html">Map and Directions</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main -->     
+    <main class="menupage">
+        <h1>Menu</h1>
+        <div class="foodcat">
+            <section>
+                <h3><a href="" id="s">Starters</a></h3>
+                <ul>
+                    <li><a href="#antipasti1">Antipasti</a></li>
+                    <li><a href="#zuppe1">Zuppe</a></li>
+                    <li><a href="#insalate1">Insalate</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3><a href="" id="e">Entrees</a></h3>
+                <ul>
+                    <li><a href="#paste1">Paste</a></li>
+                    <li><a href="#pesce1">Pesce</a></li>
+                    <li><a href="#carne1">Carne</a></li>
+                    <li><a href="#polli1">Polli</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3><a href="" id="t">Sides and Veggie</a></h3>
+                <ul>
+                    <li><a href="#vegetatiano1">Vegetatiano</a></li>
+                    <li><a href="#sides1">Sides</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="fooditem">
+            <section class="chef-suggestion">
+                <h3>chef's suggestion</h3>
+                <div>
+                    <article>
+                        <h5>Lobster Diablo</h5>
+                        <p>Broiler lobster tail, linguine arrabiata</p>
+                        <p class="price">45</p>
+                    </article>
+    
+                    <article>
+                        <h5>Filet Mignon Portobello</h5>
+                        <p>Butterflied, with cognac, portobello murshroom sauce</p>
+                        <p class="price">65</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="antipasti" id="antipasti1">
+                <h3>antipasti</h3>
+                <div>
+                    <article>
+                        <h5>Calamaretti Fritti</h5>
+                        <p>Fried baby calamari, marinara sauce</p>
+                        <p class="price">22</p>
+                    </article>
+    
+                    <article>
+                        <h5>Antipasto Misto</h5>
+                        <p>Prosciutto, mortadella, salami fresh mozzarella, and provolone cheese</p>
+                        <p class="price">21</p>
+                    </article>
+    
+                    <article>
+                        <h5>Scampi Porto Fino</h5>
+                        <p>Prawns, garlic, herbs, white wine, tomato</p>
+                        <p class="price">24</p>
+                    </article>
+    
+                    <article>
+                        <h5>Mozzarella Caprese</h5>
+                        <p>Mozzarella, sliced tomato, basil</p>
+                        <p class="price">17</p>
+                    </article>
+    
+                    <article>
+                        <h5>Polpetta</h5>
+                        <p>Meatballs in a marinara sauce</p>
+                        <p class="price">16</p>
+                    </article>
+    
+                    <article>
+                        <h5>Arancini di Riso</h5>
+                        <p>Rice croquettes, gorgonzola, mozzarella, sun dried tomatoes</p>
+                        <p class="price">17</p>
+                    </article>
+    
+                    <article>
+                        <h5>Mozzarella Marinara</h5>
+                        <p>Fresh mozzarella, heirloom tomatoes</p>
+                        <p class="price">18</p>
+                    </article>
+    
+                    <article>
+                        <h5>Burrata</h5>
+                        <p>Buffalo mozzarella, heirloom tomatoes</p>
+                        <p class="price">18</p>
+                    </article>
+    
+                    <article>
+                        <h5>Prosciutto e Melone</h5>
+                        <p>Prosciutto, cantelope</p>
+                        <p class="price">20</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="zuppe" id="zuppe1">
+                <h3>zuppe</h3>
+                <div>
+                    <article>
+                        <h5>Minestrone</h5>
+                        <p>Assorted vegetables</p>
+                        <p class="price">13</p>
+                    </article>
+    
+                    <article>
+                        <h5>Paste e Fagioli</h5>
+                        <p>Tube pasta, cannellini beans</p>
+                        <p class="price">13</p>
+                    </article>
+    
+                    <article>
+                        <h5>Stracciatella Romana</h5>
+                        <p>Spinach, egg, parmesan</p>
+                        <p class="price">13</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="insalate" id="insalate1">
+                <h3>insalate</h3>
+                <div>
+                    <article>
+                        <h5>Guido's</h5>
+                        <p>Lettuce, bologna salami, mozzarella, garbanzo beans, italian house dressing</p>
+                        <p class="price">19</p>
+                    </article>
+    
+                    <article>
+                        <h5>Frutti di Mare</h5>
+                        <p>Lettuce, shrimp, scallops.Calamari, house dressing</p>
+                        <p class="price">28</p>
+                    </article>
+    
+                    <article>
+                        <h5>Caesar</h5>
+                        <p>Romaine lettuce, grated parmesan cheese, classic Caesar dressing, garlic croutons</p>
+                        <p class="price">17</p>
+                    </article>
+    
+                    <article>
+                        <p>** Caesar or Guido's with chicken or shrimp 35</p>
+                    </article>
+                </div>
+            </section> 
+
+            <section class="paste" id="paste1">
+                <h3>Paste</h3>
+                <div>
+                    <article>
+                        <h5>Ravioli di Aragosta</h5>
+                        <p>Lobster ravioli, vodka pink sauce</p>
+                        <p class="price">31</p>
+                    </article>
+    
+                    <article>
+                        <h5>Ravioli Vesubio</h5>
+                        <p>Chicken, sun dried tomatoes, mushrooms, light cream sauce</p>
+                        <p class="price">29</p>
+                    </article>
+    
+                    <article>
+                        <h5>Linguini alla Vongole</h5>
+                        <p>Linguini, clams, white wine sauce</p>
+                        <p class="price">32</p>
+                    </article>
+    
+                    <article>
+                        <h5>Linguini Scampi</h5>
+                        <p>Jumbo shrimp in spicy marinara</p>
+                        <p class="price">39</p>
+                    </article>
+    
+                    <article>
+                        <h5>Linguini Pescatore</h5>
+                        <p>Shrimp, scallops, clams, calamari, mussels, fish, red tomato broth</p>
+                        <p class="price">38</p>
+                    </article>
+    
+                    <article>
+                        <h5>Fettuccine Alfredo with Chicken</h5>
+                        <p>Chicken, cream sauce</p>
+                        <p class="price">29</p>
+                    </article>
+    
+                    <article>
+                        <h5>Lasagna alla Bolognese</h5>
+                        <p>Meat lasagna, mozzarella, spicy marinara</p>
+                        <p class="price">29</p>
+                    </article>
+    
+                    <article>
+                        <h5>Spaghetti Bolognese</h5>
+                        <p>Spaghetti, meat sauce</p>
+                        <p class="price">29</p>
+                    </article>
+    
+                    <article>
+                        <h5>Spaghetti "Casa"</h5>
+                        <p>Penne pasta in our fresh pesto sauce with broccoli</p>
+                        <p class="price">27</p>
+                    </article>
+    
+                    <article>
+                        <h5>Spaghetti con Polpette</h5>
+                        <p>Spaghetti in a marinara sauce served with our homemade meatballs</p>
+                        <p class="price">30</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="pesce"  id="pesce1">
+                <h3>pesce</h3>
+                <div>
+                    <article>
+                        <h5>Salmon Dijon</h5>
+                        <p>Atlantic salmon, light Dijon sauce</p>
+                        <p class="price">40</p>
+                    </article>
+    
+                    <article>
+                        <h5>Cioppino</h5>
+                        <p>Shrimp, scallops, calamari, clams, mussels, tomato and white wine broth</p>
+                        <p class="price">40</p>
+                    </article>
+    
+                    <article>
+                        <h5>Scampi alla Pizzaiola</h5>
+                        <p>Prawns, white wine tomato sauce, garlic, olive oil</p>
+                        <p class="price">38</p>
+                    </article>
+    
+                    <article>
+                        <h5>Scampi Aglio e Olio</h5>
+                        <p>Prawns, garlic, olive oil</p>
+                        <p class="price">38</p>
+                    </article>
+    
+                    <article>
+                        <h5>Branzino</h5>
+                        <p>Mediterranean Sea bass, lemon, caper sauce</p>
+                        <p class="price">40</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="carne" id="carne1">
+                <h3>carne</h3>
+                <div>
+                    <article>
+                        <h5>Vitello Parmigiana</h5>
+                        <p>Veal, melted mozzarella, marinara side os spaghetti</p>
+                        <p class="price">40</p>
+                    </article>
+    
+                    <article>
+                        <h5>Vitello alla Milanese</h5>
+                        <p>Breaded veal cutlet, side of spaghetti marinara</p>
+                        <p class="price">40</p>
+                    </article>
+    
+                    <article>
+                        <h5>New York Steak</h5>
+                        <p>New York sreak, roasted garlic, fresh herbs</p>
+                        <p class="price">55</p>
+                    </article>
+    
+                    <article>
+                        <h5>Filetto di Manzo</h5>
+                        <p>Filet mignonette, green peppercorn, and cognac sauce</p>
+                        <p class="price">60</p>
+                    </article>
+    
+                    <article>
+                        <h5>Pork</h5>
+                        <p>Grilled bone in pork loin, rustic champignon marsala sauce, side spaghetti aglio e olio</p>
+                        <p class="price">38</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="polli"  id="polli1">
+                <h3>polli</h3>
+                <div>
+                    <article>
+                        <h5>Chicken Picatta</h5>
+                        <p>Chicken breast, white wine, lemon, caper sauce</p>
+                        <p class="price">35</p>
+                    </article>
+    
+                    <article>
+                        <h5>Chicken Marsala</h5>
+                        <p>Chicken breast, marsala wine mushroom sauce</p>
+                        <p class="price">35</p>
+                    </article>
+    
+                    <article>
+                        <h5>Chicken Melanzana</h5>
+                        <p>Chicken breast, eggplant, mozzarella cheese, light tomato sauce</p>
+                        <p class="price">35</p>
+                    </article>
+    
+                    <article>
+                        <h5>Chicken Parmigiana</h5>
+                        <p>Breaded chicken, melted mozzarella cheese, marinara sauce, side of spaghetti marinara</p>
+                        <p class="price">35</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="vegetatiano" id="vegetatiano1">
+                <h3>vegetariano</h3>
+                <div>
+                    <article>
+                        <h5>Eggplant Parmigian</h5>
+                        <p>Eggplant, marinara, melted mozzarella, and parmesan cheese</p>
+                        <p class="price">28</p>
+                    </article>
+    
+                    <article>
+                        <h5>Ravioli di Magro</h5>
+                        <p>Spinach, swiss chard, cheese ravioli, marinara sauce</p>
+                        <p class="price">27</p>
+                    </article>
+    
+                    <article>
+                        <h5>Penne Arrabiata</h5>
+                        <p>Penne, spicy marinara sauce</p>
+                        <p class="price">27</p>
+                    </article>
+    
+                    <article>
+                        <h5>Penne Pesto</h5>
+                        <p>Penne pasta in our fresh pesto sauce with broccoli</p>
+                        <p class="price">27</p>
+                    </article>
+    
+                    <article>
+                        <h5>Capellini alla Primavera</h5>
+                        <p>Assorted vegetables, heirloom tomatoes, garlic, and olive oil</p>
+                        <p class="price">27</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="sides" id="sides1">
+                <h3>sides</h3>
+                <div>
+                    <article>
+                        <h5>Saute`ed Spinach</h5>
+                        <p class="price">13</p>
+                    </article>
+    
+                    <article>
+                        <h5>Side pasta</h5>
+                        <p class="price">13</p>
+                    </article>
+                </div>
+            </section> 
+        </div>
+
+        <div class="map-menu">
+            <div class="button">
+                <a class="buttonlink" href="reservations.html">Make A Reservation</a>
+            </div>
+            <div class="map2">
+                <img src="../images/Map.png" alt="Map">
+            </div>
+            <div class="address2">
+                <p>11980 Santa Monica Blvd <br>Los Angeles, CA 90025</p>
+                <article class="schedules">
+                    <h3>Our Schedules</h3>
+                    <ul>
+                        <li>Lunch Mon-Fri 11:30am-2:30pm</li>
+                        <li>Dinner Sun-Thurs 5pm-10pm</li>
+                        <li>Dinner Fri-Sat 5pm-10:30pm</li>
+                    </ul>
+                </article>
+
+                <article class="schedules">
+                    <h3>Parties Info</h3>
+                    <ul>
+                        <li>Phone : (310) 820 - 6649</li>
+                        <li>Please email</li>
+                        <li> guidoslareservations@gmail.com</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+
+        <section class="mail-home" id="mailshow">
+            <div>
+                <h3>Join our mailing list</h3>
+                <p>Receive all updates about events, discounts and new suggested flavors available on our menu via email.</p>
+            </div>
+            
+            <div class="mail-homecontainer" >
+                    <!-- <form action="#">
+                                            -->
+                        <!-- <input type="text" placeholder="" class="input-field"> -->
+                    <input type="text" placeholder="Enter your email">
+                    <button type="submit"><i class="fa-solid fa-play" aria-hidden="true"></i></button>    
+                       
+                    <!-- </form> -->
+            </div>  
+            <div class="modal">
+                <div class="mContent">
+                    <h2><a href="" class="message">Thanks For Subscribing</a></h2>
+                    <!-- <button><i class="fa-solid fa-circle-xmark"></i></button> -->
+                </div>
+            </div>
+
+        </section>
+        <script>
+            const modal = document.querySelector('.modal');
+            const play = document.querySelector('.fa-play');
+            const close = document.querySelector('.message');
+            const mail = document.querySelector('.mail-homecontainer')
+            modal.classList.add('closemessage')
+            
+            play.addEventListener('click', e => {
+                modal.classList.add('openmessage');
+                modal.classList.remove('closemessage');
+                mail.style.display='none';
+
+            })
+            close.addEventListener('click', e =>{
+                modal.classList.remove('openmessage');
+                modal.classList.add('closemessage');
+            })
+
+            
+        </script>
+    </main>
+
+    <!-- Footer-->
+    <footer>
+        <nav class="navFooter">
+            <ul class="menuFooter">
+                <li><a href="./menu.html">Menu</a></li>
+                <li><a href="./reservations.html">Reservations</a></li>
+                <li><a href="./events.html">Events</a></li>
+                <li><a href="./aboutUs.html">About us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="footerSocial">
+            <h3>Connect with us!</h3>
+            <section class="socialIcons">
+                <a href="https://www.instagram.com/guidosla/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/guidoslosangeles/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/GuidosWLA/"><i class="fa-brands fa-square-x-twitter"></i></a>
+            </section>
+        </section>
+
+        <section class="footerTerms">
+            <a href="./policies.html">Policies</a>
+            <p>Copyright &copy; 2024 Guido’s LA | All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+</html>
